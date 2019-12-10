@@ -23,10 +23,4 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            step([$class: 'Mailer', recipients: [emailextrecipients([[$class:
-            'CulpritsRecipientProvider'], [$class: 'RequesterRecipientProvider']])].join(' ')])
-        }
-    }
 }
