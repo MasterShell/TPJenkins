@@ -1,7 +1,6 @@
 pipeline {
-    agent {
-      label 'slave-java'
-    }
+    agent any
+
     options {
         disableConcurrentBuilds()
         buildDiscarder(logRotator(numToKeepStr: '30', daysToKeepStr: '90'))
