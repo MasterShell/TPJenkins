@@ -1,6 +1,6 @@
 pipeline {
     agent {
-      label 'LIBELLE_SLAVE_CIBLE'
+      label 'slave-java'
     }
     options {
         disableConcurrentBuilds()
