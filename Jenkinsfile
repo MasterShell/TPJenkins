@@ -14,12 +14,12 @@ pipeline {
         }
         stage('Build') {
             steps{
-                sh "mvn build"
+                bat "mvn build"
             }
         }
         stage('Test') {
             steps{
-                sh "mvn test"
+                bat "mvn test"
             }
         }
     }
